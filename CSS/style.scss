@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;   
+    font-family: 'Montserrat', sans-serif; 
+}
+body{
+    background: #41B883;
+}
+h1{
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    color:#fff;
+    font-size:2.5vw;
+}
+.wrapper{
+    width: 50vw;
+    min-height: 20vw;
+    margin: 0 auto;    
+    background: #fff;
+    border-radius: 1vw;
+    padding: 2vw;
+    box-shadow: 7px 7px 13px 1px  rgba($color: #000000, $alpha: 0.7);
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    form{        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            font-size: 1.8vw;
+            margin-top: 2vw;
+            margin-bottom: 1vw;
+        }
+        input{
+            border-radius: 2vw;
+            padding: 0.6vw;            
+            background: #fff;
+            font-size: 1.2vw;
+            outline: none;
+            border: 4px #41B883 solid;
+            color:#41B883;
+
+        }
+        button{
+            margin-top: 2vw;
+            border: 0;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+            color:#fff;
+            background-color:#41B883;
+            border-radius:2vw ;
+            padding: 1vw 3vw;
+            font-size: 1.3vw;
+            transition: transform 400ms;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.03);
+            }
+        }                
+    } 
+    
+
+        #download{
+            display: none;
+            opacity: 0;
+            margin: 1vw;
+            border: 4px solid #41B883 ;
+            padding: 1vw;
+            border-radius: 1.8vw;
+            transition: transform 400ms;
+            background: #41B883;
+                color: #fff;            
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }        
+    }
+    img{
+        margin-top: 2vw;
+        width: 10vw;
+        height: 10vw;
+        display: none;
+        margin-bottom: 1vw;
+    }
+    canvas{
+        width: 10vw;
+        height: 10vw;
+    }
+    @media only screen  and (max-width:1024px) {
+        h1{
+
+            margin-top: 3vh;
+            font-size: 2.5vh;
+        }
+        .wrapper{
+            width: 80vw;
+            min-height: 20vh;
+            border-radius: 5vw;
+            form{
+                h3{
+                    font-size: 2vh;
+                    margin-bottom:2vh;
+                }
+                input{
+                    font-size: 2vh;
+                    border-radius: 4vw;
+                    padding: 0.5vh;
+                    margin-bottom: 1vh;
+                }
+                button{
+                    font-size: 2.5vh;
+                    padding: 1vh 2vh;
+                    border-radius:5vw ;
+                    margin-bottom: 2vh;
+                }
+            }   
+            .options{
+                #download{
+                    font-size: 2vh;
+                    padding: 1vh 2vh;
+                    border-radius: 10vw;
+                    background: #fff;
+                    color:#41B883;
+                    font-weight: 600;
+                }
+            }
+        }
+        img{            
+            width: 20vh;
+            height: 20vh;
+            display: none;   
+            margin-bottom: 2vh;         
+        }
+        canvas{
+            width: 20vh;
+            height: 20vh;
+        }
+
+    }
